@@ -11,3 +11,12 @@ This application was written to show building a set of Kubernetes services that 
 ## Application Information
 
 The application was written in Python Flask. There is a lot of room for optimizations in how the application was written and should not be considered a best practice guide for building a Flask application in Kubernetes.
+
+## Deployment Instructions
+
+* Clone down this repository
+* Install Project Contour into your Kubernetes Cluster
+* Replace relevant fqdn entries in Contour HTTPProxy configuration files
+* Apply either the Pods and Services YAML or Dark Mode Pods and Services YAML
+* Apply relevant Contour HTTPProxy configurations
+
