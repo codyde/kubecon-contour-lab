@@ -19,4 +19,3 @@ The application was written in Python Flask. There is a lot of room for optimiza
 * Replace relevant fqdn entries in Contour HTTPProxy configuration files
 * Apply either the Pods and Services YAML or Dark Mode Pods and Services YAML
 * Apply relevant Contour HTTPProxy configurations
-
