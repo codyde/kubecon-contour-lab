@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<base href="/dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.3.0/custom-elements.min.js"></script>
+<script src="{{ url_for('static', filename='js/clr-icons.min.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/clr-icons.min.css') }}" />
+
+<link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui-dark.min.css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/overwrite.css') }}" />
+
+<title>KubeCon Mini-App</title>
+
+<div class="main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a href="/" class="nav-link">
+                <clr-icon shape="vm-bug"></clr-icon>
+                <span class="title">KubeCon Mini-App</span>
+            </a>
+        </div>
+    </header>
+    <nav class="subnav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://cloud.vmware.com/tanzu" target="_blank">VMware Tanzu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://cloud.vmware.com/tanzu-mission-control" target="_blank">VMware Tanzu
+                    Mission Control</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.vmware.com/products/vsphere/projectpacific.html"
+                    target="_blank">Project Pacific</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://kubernetes.academy/" target="_blank">Kubernetes Academy</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <div class="content-area">
+            <div>
+                <div class="outer">
+                    <div class=row>
+                        <img class="logo" width="15%" alt="vRA Logo"
+                            src="{{ url_for('static', filename='Tanzu_icon_clean.svg') }}">
+                    </div>
+                </div>
+                <div class="clr-row">
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <b>Welcome to The VMware KubeCon Mini-Labs! </b>
+                            </div>
+                            <div class="card-block">
+                                <div class="card-text">
+                                    These KubeCon Mini-Labs are designed to showcase the primary Open Source projects
+                                    that VMware is currently focusing on. You can experience projects
+                                    like VMware Harbor, Project Contour, Project Velero, Sonobuoy, Cluster API, Octant,
+                                    and Tern. Each of these projects has their own dedicated lab
+                                    experience complete with an environment to work in and exercises to get you some
+                                    basic exposure to the projects.
+                                    <br><br>
+                                    <b>See the table below for the labs and their exercises!</b>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="left">Project</th>
+                                            <th class="left">Lab Exercises</th>
+                                            <th class="left">Project Link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="left">Octant</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-octant/">https://vmware-oss.gitbook.io/intro-to-octant/</a>
+                                            </td>
+                                            <td class="left"><a
+                                                    href="https://github.com/vmware-tanzu/octant">https://github.com/vmware-tanzu/octant</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">Contour</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-contour/">https://vmware-oss.gitbook.io/intro-to-contour/</a>
+                                            </td>
+                                            <td class="left"><a
+                                                    href="https://projectcontour.io">https://projectcontour.io</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">Velero</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-velero/">https://vmware-oss.gitbook.io/intro-to-velero/</a>
+                                            </td>
+                                            <td class="left"><a
+                                                    href="https://projectvelero.io">https://projectvelero.io</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">Harbor</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-harbor/">https://vmware-oss.gitbook.io/intro-to-harbor/</a>
+                                            </td>
+                                            <td class="left"><a href="https://goharbor.io">https://goharbor.io</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">Sonobuoy</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-sonobuoy/">https://vmware-oss.gitbook.io/intro-to-sonobuoy/</a>
+                                            </td>
+                                            <td class="left"><a href="https://sonobuoy.io/">https://sonobuoy.io/</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">Cluster API</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-clusterapi/">https://vmware-oss.gitbook.io/intro-to-clusterapi/</a>
+                                            </td>
+                                            <td class="left"><a
+                                                    href="https://github.com/kubernetes-sigs/cluster-api">https://github.com/kubernetes-sigs/cluster-api</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">Tern</td>
+                                            <td class="left"><a
+                                                    href="https://vmware-oss.gitbook.io/intro-to-tern/">https://vmware-oss.gitbook.io/intro-to-tern/</a>
+                                            </td>
+                                            <td class="left"><a
+                                                    href="https://github.com/vmware/tern">https://github.com/vmware/tern</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

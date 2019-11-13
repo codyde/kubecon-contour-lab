@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<base href="/dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.3.0/custom-elements.min.js"></script>
+<script src="{{ url_for('static', filename='js/clr-icons.min.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/clr-icons.min.css') }}" />
+
+<link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui-dark.min.css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/overwrite.css') }}" />
+
+<title>KubeCon Mini-App</title>
+
+<div class="main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a href="/" class="nav-link">
+                <clr-icon shape="vm-bug"></clr-icon>
+                <span class="title">KubeCon Mini-App</span>
+            </a>
+        </div>
+    </header>
+    <nav class="subnav">
+            <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cloud.vmware.com/tanzu" target="_blank">VMware Tanzu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cloud.vmware.com/tanzu-mission-control" target="_blank">VMware Tanzu
+                            Mission Control</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.vmware.com/products/vsphere/projectpacific.html"
+                            target="_blank">Project Pacific</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://kubernetes.academy/" target="_blank">Kubernetes Academy</a>
+                    </li>
+                </ul>
+    </nav>
+    <div class="content-container">
+        <div class="content-area">
+            <div>
+                <div class="outer">
+                    <div class=row>
+                        <img class="logo" width="75%" alt="BuildRunManage"
+                            src="{{ url_for('static', filename='brm.jpg') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

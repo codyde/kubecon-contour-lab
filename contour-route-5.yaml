@@ -1,0 +1,26 @@
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: basic
+spec:
+  virtualhost:
+    fqdn: REPLACEME
+  includes:
+  - name: kubecon
+    namespace: default
+    conditions:
+    - prefix: /kubecon
+  - name: build-run-manage
+    namespace: default
+    conditions:
+    - prefix: /brm
+  routes:
+  - services:
+    - name: kubecon-minilab-app-svc
+      port: 80
+      weight: 10
+    - name: kubecon-minilab-app-dark-svc
+      port: 80
+      weight: 90
+    conditions:
+      - prefix: /

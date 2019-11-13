@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<base href="/dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.3.0/custom-elements.min.js"></script>
+<script src="{{ url_for('static', filename='js/clr-icons.min.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/clr-icons.min.css') }}" />
+
+<link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui-dark.min.css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/overwrite.css') }}" />
+
+<title>KubeCon Mini-App</title>
+
+<div class="main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a href="/" class="nav-link">
+                <clr-icon shape="vm-bug"></clr-icon>
+                <span class="title">KubeCon Mini-App</span>
+            </a>
+        </div>
+    </header>
+    <nav class="subnav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://cloud.vmware.com/tanzu" target="_blank">VMware Tanzu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://cloud.vmware.com/tanzu-mission-control" target="_blank">VMware Tanzu
+                    Mission Control</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.vmware.com/products/vsphere/projectpacific.html"
+                    target="_blank">Project Pacific</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://kubernetes.academy/" target="_blank">Kubernetes Academy</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <div class="content-area">
+            <div>
+                <div class="outer">
+                    <div class=row>
+                        <img class="logo" width="15%" alt="Contour Logo"
+                            src="{{ url_for('static', filename='contour.png') }}">
+                    </div>
+                </div>
+                <div class="clr-row">
+                    <div>
+                        <div class="card">
+                                <div class="card-header">
+                                        <b>Welcome to the Contour Mini-Lab</b>
+                                    </div>
+                                    <div class="card-block">
+                                            <div class="card-text">
+                                                This mini-lab is intended to demonstrate the capabilities of <a href="https://projectcontour.io">Project Contour</a>. We will
+                                                be using this application to create an number of <a href="https://projectcontour.io/docs/v1.0.0/httpproxy/">HTTPProxy</a> objects and define routes to stitch our services together. 
+                                                This application was created using Python, Flask, and a whole lot of love. You can find the source for all of these projects on GitHub
+                                                in <a href="https://github.com/codyde/kubecon-contour-lab">this repository</a>.
+                                            </div>
+                                            </div>   
+                        </div>
+                    </div>
+                    <div class="clr-col-lg-4 clr-col-sm-6 clr-col-12">
+                        <a href="/minilabs" class="card clickable">
+                            <div class="card">
+                                <div class="card-header">
+                                    Mini-Lab Menu
+                                </div>
+                                <div class="card-block">
+                                    Take a look at all the Open Source project mini-labs we are highlighting at KubeCon!
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clr-col-lg-4 clr-col-sm-6 clr-col-12">
+                        <a href="/kubecon" class="card clickable">
+                            <div class="card">
+                                <div class="card-header">
+                                    KubeCon
+                                </div>
+                                <div class="card-block">
+                                    Do you want to see the KubeCon banner? Click here!
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clr-col-lg-4 clr-col-sm-6 clr-col-12">
+                        <a href="/brm" class="card clickable">
+                            <div class="card">
+                                <div class="card-header">
+                                    VMware Build Run Manage
+                                </div>
+                                <div class="card-block">
+                                    Do you want more detail around VMwares Build Run and Manage plan?
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
