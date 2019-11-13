@@ -4,7 +4,7 @@ metadata:
   name: basic
 spec:
   virtualhost:
-    fqdn: your.fqdn.dev
+    fqdn: REPLACEME
   includes:
   - name: kubecon
     namespace: default
