@@ -20,3 +20,8 @@ spec:
       port: 80
     conditions:
       - prefix: /
+  - services:
+    - name: kubecon-minilab-ll-svc
+      port: 80
+    conditions:
+      - prefix: /minilabs
